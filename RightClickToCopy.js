@@ -7,7 +7,7 @@
 // @match        https://waifulabs.com/generate
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=waifulabs.com
 // @grant        none
-// @require		 https://raw.githubusercontent.com/EnergoStalin/Tampermonkey/Shared.js
+// @require		 https://greasyfork.org/scripts/446540-ensshared/code/ENSShared.js
 // @license      GPLV3
 // ==/UserScript==
 

@@ -1,7 +1,7 @@
 const c = document.createElement("canvas");
 const ctx = c.getContext("2d");
 
-export function imageToBlob(imageURL) {
+function imageToBlob(imageURL) {
 	const img = new Image;
 	img.crossOrigin = "";
 	img.src = imageURL;
@@ -17,7 +17,7 @@ export function imageToBlob(imageURL) {
 	})
 }
 
-export const toggleAttribute = (elem, attr, val) => {
+const toggleAttribute = (elem, attr, val) => {
 	const tgattr = (elem, attr, val) => {
 		if (elem.hasAttribute(attr)) {
 			let atrval = elem.getAttribute(attr);

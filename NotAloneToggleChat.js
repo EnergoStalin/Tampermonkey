@@ -7,7 +7,7 @@
 // @match        https://notalone.tv/room/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=notalone.tv
 // @grant        nonechrome-extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/options.html#nav=new-user-script+editor
-// @require		 https://raw.githubusercontent.com/EnergoStalin/Tampermonkey/Shared.js
+// @require		 https://greasyfork.org/scripts/446540-ensshared/code/ENSShared.js
 // @license      GPLV3
 // ==/UserScript==
 
