@@ -1,7 +1,7 @@
 const c = document.createElement("canvas");
 const ctx = c.getContext("2d");
 
-function imageToBlob(imageURL) {
+const imageToBlob = (imageURL) => {
 	const img = new Image;
 	img.crossOrigin = "";
 	img.src = imageURL;
@@ -33,4 +33,17 @@ const toggleAttribute = (elem, attr, val) => {
 			tgattr(elem[key], attr, val);
 		}
 	} else tgattr(elem, attr, val);
+}
+
+const awaitSelector = (selector) => {
+	return new Promise((resolve) => {
+		const nodes = [];
+		setInterval(() => {
+			if (nodes.length !== 0) {
+				clearInterval(tm);
+				resolve(nodes);
+			}
+			nodes.splice(nodes.length, 0, ...document.querySelectorAll(selector));
+		}, 100);
+	});
 }
